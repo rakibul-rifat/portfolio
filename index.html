@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="theme-color" content="rgb(0, 0, 0)" />
+<!-- jquery aniview plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://unpkg.com/jquery-aniview@1.0.3/dist/jquery.aniview.js" integrity="sha384-uvboBeyPkVGldyoicVJST1JEAbxI2W0lG2fFOyGvahZrC4jWiv0vmryxw9NXIEn6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-aniview@1.0.4/dist/jquery.aniview.min.js"></script>
+
+<!-- jquery aniview plugin -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tailwind.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/tailwind.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakibul</title>
+</head>
+<body class="bg-black">
+    <!-- Loader Wrapper -->
+  <div id="loader-wrapper" class="fixed inset-0 flex items-center justify-center z-50 bg-black">
+    <div class="text-center w-2/3 max-w-md">
+      <p class="mb-2 text-gray-300 text-lg font-medium">loading</p>
+      <div class="w-full h-4 bg-gray-700 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-cyan-400 rounded-full w-0"></div>
+      </div>
+      <p id="progress-text" class="mt-2 text-cyan-300 font-semibold text-lg">0%</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" >
+  
+<!-- Navbar -->
+  <nav class="bg-black text-white p-2 fixed w-full top-0 z-10 shadow-md lg:mx-20 ">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+       <h1 class="text-white lg:text-2xl">ONE LAST TRY</h1>
+       <!-- <img class="w-10  ml-2 lg:ml-0" src="https://drive.google.com/file/d/1iP_S9NwvUAegRoKtZ9y_lG2w1lDhVvY6/view?usp=sharing"> -->
+       <!-- Toggle Button (Hamburger Icon) -->
+       <button id="navbar-toggler" class="text-white md:hidden right-10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 mr-5">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+       </button>
+       <!-- Navbar Menu -->
+      <div  class="hidden md:flex text-sm space-x-8 ">
+      <a href="#home" class="hidden md:flex hover:text-gray-400">Home</a>
+      <a href="#project" class="hidden md:flex hover:text-gray-400">Projects</a>
+      <a style="margin-right: 160px;" href="#contact" class="hidden md:flex hover:text-gray-400 ">Contact</a>
+    </div>
+  </div>
+<div id="navbar-menu" class="hidden grid md:hidden text-center mt-10">
+ <a href="#home" class="hover:text-gray-400">Home</a>
+  <a href="#project" class="hover:text-gray-400">Projects</a>
+  <a href="#contact" class=" hover:text-gray-400 pb-10">Contact</a>
+</div>
+</nav>
+ <!-- Container -->
+ <div style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20 bg-[url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-no-repeat lg:bg-[center_bottom_0rem] bg-[center_right_0rem] bg-cover bg-[auto] rounded-3xl aniview mt-20 "  data-av-animation="animate__backInDown">
+  <div class="lg:p-6 ">
+    <div class="lg:flex grid justify-between ">
+      <h2 class="text-xl">Hello, It's me </h2>
+      </div>
+       <h1 class="lg:text-6xl text-3xl mt-10 aniview"data-av-animation="animate__rotateIn">RAKIBUL RIFAT</h1>
+       <p>Front-end Web Developer</p>
+       <p class="mt-10  lg:mr-80 bg-[#00000080] rounded-2xl p-2">I’m a passionate Frontend Web Developer with expertise in HTML, CSS, JavaScript, Tailwind css, Bootstrap, Framer motion, Gsap and modern frameworks like React.js. I focus on building responsive, user-friendly websites with clean, efficient code. Passionate about creating seamless user experiences, I stay current with industry trends to deliver high-quality, functional web applications..</p>
+      <button  class="bg-blue-700 aniview text-sm  hover:bg-blue-900 mt-20 rounded-3xl p-3"data-av-animation="animate__zoomInDown"><a class="text-decoration-none text-white " href="https://drive.google.com/file/d/11AloyKUYJEd17TJQLV_vhPNbUnl4J0W7/view?usp=drive_link">Download My Resume</a></button>
+  </div>
+</div>
+<!-- =====dlogo====== -->
+<div class="lg:mx-20 my-10 " data-av-animation="animate__backInUp">
+  <div class="marquee">
+    <div class="marquee__group lg:mr-40">
+      <span><img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512"></span>
+     <span><img class="loader" style="width: 40px; height: 40px;"src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512"></span>
+     <span><img class="loader " style="width: 40px; height: 40px;" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg"></span>
+     <span>  <img class="loader" style="width: 40px; height: 40px; text-align: center;
+      animation: spin 5s linear infinite;
+    "src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175109.png?f=webp&w=512"></span>
+     <span>   <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175153.png?f=webp&w=512"></span>
+     <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=512"></span>
+      <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg"></span>
+    <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://www.remycanal.me/_vercel/image?url=https:%2F%2Fwww.remycanal.me%2Fimg%2Fgsap.png&w=1536&q=100"></span>
+    </div>
+  <div class="marquee__group" aria-hidden="true">
+    <span><img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=512"></span>
+    <span><img class="loader" style="width: 40px; height: 40px;"src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--logos-pack-icons-722685.png?f=webp&w=512"></span>
+    <span><img class="loader " style="width: 40px; height: 40px;" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg"></span>
+    <span>  <img class="loader" style="width: 40px; height: 40px; text-align: center;
+     animation: spin 5s linear infinite;
+   "src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-freebies-pack-logos-icons-1175109.png?f=webp&w=512"></span>
+    <span>   <img class="loader " style="width: 40px; height: 40px;" src="https://cdn.iconscout.com/icon/free/png-512/free-jquery-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175153.png?f=webp&w=512"></span>
+    <span>  <img class="loader " style="width: 35px; height: 35px;;"src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=512"></span>
+      <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg"></span>
+    <span>  <img class="loader" style="width: 35px; height: 35px;;"src="https://www.remycanal.me/_vercel/image?url=https:%2F%2Fwww.remycanal.me%2Fimg%2Fgsap.png&w=1536&q=100"></span>
+  </div>
+  </div>
+</div>
+<!-- =======speakers====== -->
+<div id="speakers"  class=" lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4   aniview"data-av-animation="animate__fadeInBottomRight" >
+  <div  style="background-color: #0147FF;" class=" p-4 text-white rounded-3xl">
+    <h2  class="text-xl p-5">Languages</h2>
+    <div class="flex justify-between mt-5 p-4">
+     
+      <p class="p-4">I am a skilled frontend web developer with expertise in HTML, CSS, and JavaScript. I create responsive, interactive websites and focus on delivering clean, efficient, and user-friendly web experiences.</p>
+      </div>
+       <div class="flex justify-between mt-10 p-4">
+      <div class="mt-4">
+     </div>
+   </div>
+  </div>
+<div class=" text-white ">
+    <div class=" sm:grid-cols-2 ">
+      <div style="background-color: #0147FF;" class=" p-10 text-white rounded-3xl ">
+        <h2 class="text-xl">Frameworks/Libraries</h2>
+        <p class="text-xs my-10">I am proficient in React, Tailwind CSS, Bootstrap, jQuery, and Anivew. Framer motion, Gsap, Animation css. I build dynamic, responsive websites with modern frameworks and libraries, ensuring high performance and excellent user experiences.</p>
+       </div>
+       <div class="bg-gray-200 p-10 text-black rounded-3xl mt-4">
+        <h2 class="text-xl">Tools & Platforms</h2>
+        <p class="text-xs my-10 ">I am experienced with tools and platforms like Git, GitHub, VS Code, Figma, and npm. These tools help streamline development workflows, version control, and create visually appealing, responsive web designs..</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===========agenda======== -->
+<div class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-8xl text-3xl mt-10 aniview" data-av-animation="animate__fadeInLeft">Experience & Achievements</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Web designer and Frontend web developer</h1>
+</div>
+<div id="shedule" style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20  rounded-3xl flex justify-between bg-[url(https://i.pinimg.com/originals/dc/7b/49/dc7b49b3f913908b7556f8a34c338bd3.gif)] bg-cover  bg-no-repeat rounded-3xl aniview"data-av-animation="animate__backInUp">
+  <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10 ">
+      <div class="b p-4 text-white">
+        <h2 class="text-xl">Professional Experience</h2>
+        </div>
+         <div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+        <h2 class="text-3xl">AI Innovations & Trends</h2>
+        <p class="mt-5">I have successfully built responsive, user-friendly websites, collaborating with teams to deliver high-quality projects using HTML, CSS, JavaScript, and React..</p>
+    </div>
+ </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10">
+  <div class="b p-4 text-white">
+   <h2 class="text-xl">Certifications</h2>
+  </div>
+<div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+    <h2 class="text-3xl">AI Innovations & Trends</h2>
+    <p class="mt-5">The summit kicks off with a keynote, expert panels, and discussions on AI’s impact, ethics, and automation. Hands-on workshops and a networking event wrap up the day.</p>
+  </div>
+</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 mt-10">
+      <div class="b p-4 text-white">
+      <h2 class="text-xl">Awards or Recognition</h2>
+    </div>
+      <div class=" p-4 text-white aniview"data-av-animation="animate__fadeInRight">
+        <h2 class="text-3xl">AI Innovations & Trends</h2>
+        <p class="mt-5">The summit kicks off with a keynote, expert panels, and discussions on AI’s impact, ethics, and automation. Hands-on workshops and a networking event wrap up the day.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- =======keynote speakers====== -->
+<div id="project" class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-5xl text-xl mt-10 aniview" data-av-animation="animate__fadeInLeft">Recent Project I have worked on</h1>
+  <h1 class="text-xs my-10 aniview"data-av-animation="animate__fadeInRight">Projects Showcase</h1>
+</div>
+<div class="lg:mt-10 aniview" data-av-animation="animate__zoomIn">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:mx-20 gap-4 ">
+    <div class="text-white">
+      <div   class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl  p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/f80c0852ff84bbb4959da0b12386cf99-1750565134521/Screenshot_22-6-2025_1024_monitobuypet.netlify.app.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://monitobuypet.netlify.app/" class="">Live demo</a></button>
+        </div>
+   </div>
+</div>
+    <div class="text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/685e2de8f8e3e8da04806b07f563196f-1743423177584/Screenshot_31-3-2025_181245_jadoootravel.netlify.app.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://jadoootravel.netlify.app/" class="">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/a2abfacb388521d0de4f87a36e67e7a0-1743422818284/Screenshot_31-3-2025_1862_recipeitemss.netlify.app.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://recipeitemss.netlify.app/" class="">Live demo</a></button>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="mt-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:mx-20 gap-4">
+    <div class="text-white">
+      <div   class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://media.licdn.com/dms/image/v2/D4D22AQEXON3-2dWuAw/feedshare-shrink_1280/B4DZWkoWtzG8Ak-/0/1742223800608?e=1753315200&v=beta&t=Ptg9GZG9qJYf_b1HuNZp3IsRdsTJqCswPVZiREnMgwQ); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://nexus-ai-event.netlify.app/" class="0">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="0">Live demo</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="text-white">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInRight">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="0">Live demo</a></button>
+        </div>
+        <div style="height: 383px; border-radius: 50px; background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/project_item/attachment/75a890c621c7be12d702d9f65c91756b-1742060858963/Screenshot_15-3-2025_225447_localhost.jpeg); background-size: cover;" class="text-center p-4 text-white rounded-2xl bg-no-repeat aniview"data-av-animation="animate__fadeInLeft">
+          <button class="bg-black rounded-3xl p-2 mt-80"><a href="https://cafe-street-shop.netlify.app/" class="0">Live demo</a></button>
+        </div>
+    </div>
+  </div>
+</div>
+<button class="lg:mx-20 m-10 text-white text-left border rounded-3xl p-2 aniview"data-av-animation="animate__backInUp">And more!!! <i class='bx bxs-right-top-arrow-circle '></i></button>
+<!-- =========why attened======= -->
+<div id="venue" class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid aniviw" animate__tada>
+  <h1 class="lg:text-8xl text-3xl mt-10 inline-flex aniview" data-av-animation="animate__fadeInLeft">Why you will choose me??</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Discover why Next-Gen AI Summit is the must-attend event for AI professionals, innovators, and industry leaders.</h1>
+</div>
+<!-- =================== -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:mx-20 aniview mt-5"data-av-animation="animate__backInUp">
+    <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(https://www.jimphicdesigns.com/downloads/imgs-mockup/colorful-circles-swing-loader.gif)] bg-no-repeat bg-cover rounded-3xl ">
+      <h2 class="text-xl">Expertise in Frontend Technologies</h2>
+      <p class="lg:ml-60 ml-0 my-10">I have strong skills in HTML, CSS, JavaScript, and modern frameworks like React, enabling the creation of dynamic websites.</p>
+    </div>
+    <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(https://cdn.dribbble.com/users/1995744/screenshots/4205263/comp_5.gif)] bg-no-repeat bg-cover rounded-3xl aniview"data-av-animation="animate__backInUp">
+      <h2 class="text-xl">Responsive and User-Centric Design</h2>
+      <p class="lg:ml-60 ml-0 my-10">I prioritize responsive design and user experience, ensuring websites work seamlessly across all devices and provide smooth interactions.</p>
+    </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:mx-20 mt-4">
+  <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(https://i.pinimg.com/originals/fa/61/d7/fa61d71228b7710849de8b64d46a2059.gif)] bg-no-repeat bg-cover rounded-3xl aniview"data-av-animation="animate__backInUp">
+    <h2 class="text-xl">Efficient Development Process</h2>
+    <p class="lg:ml-60 ml-0 my-10">Using tools like Git, GitHub, and VS Code, I maintain efficient development workflows, version control, and consistent code quality.</p>
+  </div>
+  <div style="background-color: #1A1A1A; width: 100%; " class=" p-4 text-white  bg-[url(https://usagif.com/wp-content/uploads/loading-15.gif)] bg-no-repeat bg-cover  rounded-3xl ">
+    <h2 class="text-xl">Passion for Innovation and Learning</h2>
+    <p class="lg:ml-60 ml-0 my-10">I’m always learning new technologies and techniques to stay up-to-date with the latest frontend trends and deliver cutting-edge solutions.</p>
+  </div>
+</div>
+<!-- ============register now========= -->
+<div class="flex justify-between text-white lg:mx-20 mx-10 lg:flex grid ">
+  <h1 class="lg:text-8xl text-3xl mt-10 inline-flex aniview" data-av-animation="animate__backInUp" >CONTACT NOW</h1>
+  <h1 class="text-xs my-10 aniview "data-av-animation="animate__fadeInRight">Secure your spot at the Next-Gen AI Summit 2052 and join the future of AI innovation.</h1>
+</div>
+ <!-- Container -->
+ <div id="tickets" style="background-color: #1A1A1A;" class=" p-4 text-white lg:mx-20 bg-[url(https://i.pinimg.com/originals/64/a8/08/64a8083d07b8c98923311cbc88fecafe.gif)] bg-no-repeat bg-cover rounded-2xl aniview"data-av-animation="animate__backInUp">
+  <div class="p-6 mt-5">
+   <p>Early Bird Pricing Ends In:</p>
+   <h1 class="lg:text-8xl text-5xl">12:05:30</h1>
+  <div class="flex lg:text-2xl text-sm justify-between mt-5 lg:max-w-xl lg:max-w-xl"> <p>Days</p>
+    <p>Hours</p>
+    <p class="mr-40 ">Minutes</p>
+  </div>
+  </div>
+</div>
+<!-- ============contact us======== -->
+<div style="background-color: #1A1A1A;" class="lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-3xl mt-10 aniview "data-av-animation="animate__backInUp">
+  <div class=" p-10 text-white">
+    <h2 class="text-xl ">I'm here to connect and assist you</h2>
+    <p class="mt-5">Have questions about my services? Need help with frontend development or project? I'm ready to assist you.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+      <div id="contact" class="p-4 text-white">
+        <h2 class="text-xl ">Contact Me</h2>
+        <p>whatsapp +8801618085195</p>
+        <p>email - rakibul.rifat44@gmail.com</p>
+      </div>
+      <div class=" p-4 text-white">
+        <h2 class="text-xl">Location</h2>
+        <p>Chattogram , Bangladesh</p>
+        <h2 class="text-xl mt-5">Follow me</h2>
+     <p>
+    <a href="https://www.facebook.com/rakibul.rifat44" target="_blank" class="text-blue-600 hover:text-blue-800">
+    <i class='bx bxl-facebook'></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rakibul-rifat/" target="_blank" class="ml-2 text-blue-700 hover:text-blue-900">
+    <i class='bx bxl-linkedin-square'></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="ml-2 text-pink-600 hover:text-pink-800">
+    <i class='bx bxl-instagram'></i>
+  </a>
+  <a href="https://youtube.com" target="_blank" class="ml-2 text-red-600 hover:text-red-800">
+    <i class='bx bxl-youtube'></i>
+  </a>
+</p>
+</div>
+    </div>
+  </div>
+  <!-- =========get in touch====== -->
+  <div style="background-color: #00000019;" class="p-4 lg:p-10 text-white grid rounded-3xl">
+    <h2 class="text-3xl ">get in touch</h2>
+    <p>Reach out with inquiries about my services and details.</p>
+    <input type="text" placeholder="Name" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="Email" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="Subject" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <input type="text" placeholder="message" class="border-b-2 border-black focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+    <button class="bg-blue-800 hover:bg-green-500 text-white p-4 rounded-3xl mt-5">Send message</button>
+  </div>
+</div>
+<!-- ========footer======= -->
+<div style="background-color: #1A1A1A;" class="lg:mx-20 grid grid-cols-1 sm:grid-cols-2 gap-4 rounded-3xl mt-10 mb-10 aniview "data-av-animation="animate__rollIn">
+<div class=" text-white p-10">
+  <h2 class="text-2xl ">Find me in social platform</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 mt-10">
+    <div class="p-4 text-white">
+     <h2 class="text-xl">
+  <a href="https://facebook.com/rakibul.rifat44/" target="_blank" class="hover:underline">Facebook</a>
+</h2>
+<h2 class="text-xl mt-2">
+  <a href="https://instagram.com" target="_blank" class="hover:underline">Instagram</a>
+</h2>
+<h2 class="text-xl mt-2">
+  <a href="https://youtube.com" target="_blank" class="hover:underline">YouTube</a>
+</h2>
+<h2 class="text-xl mt-2">
+  <a href="https://wa.me/+8801618085195" target="_blank" class="hover:underline">WhatsApp</a>
+</h2>
+<h2 class="text-xl mt-2">
+  <a href="https://linkedin.com/in/rakibul-rifat" target="_blank" class="hover:underline">LinkedIn</a>
+</h2>
+<h2 class="text-xl mt-2">
+  <a href="https://google.com" target="_blank" class="hover:underline">Google</a>
+</h2>
+
+    </div>
+    <div class=" p-4 text-white">
+      <h2 class="text-xl ">Terms & Conditions</h2>
+      <h2 class="text-xl mt-2">Privacy Policy</h2>
+      <h2 class="text-xl mt-2">Cookie Policy</h2>
+    </div>
+  </div>
+</div>
+<!-- ===================== -->
+<div class="bg-blue-900 lg:p-10 p-2  text-black grid rounded-3xl">
+  <div class=" p-4 text-white aniview"data-av-animation="animate__backInDown">
+    <h2 class="text-xl ">Stay updated</h2>
+    <p class="mt-5">Subscribe for event updates & exclusive content.</p>
+    <input type="text" placeholder="Email" class="border-b-2 border-white focus:outline-none focus:border-blue-500  placeholder-gray-500 p-2 bg-sky-500/0">
+<br>
+    <button class="bg-blue-800 hover:bg-green-500 text-white p-4 rounded-3xl mt-5">Stay updated</button>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+      <div class="p-4 text-white">
+        <h2 class="text-xl ">Follow me</h2>
+    <p>
+  <a href="https://www.facebook.com/rakibul.rifat44" target="_blank" class="text-blue-600 hover:text-blue-800">
+    <i class='bx bxl-facebook'></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rakibul-rifat/" target="_blank" class="ml-2 text-blue-700 hover:text-blue-900">
+    <i class='bx bxl-linkedin-square'></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="ml-2 text-pink-600 hover:text-pink-800">
+    <i class='bx bxl-instagram'></i>
+  </a>
+  <a href="https://youtube.com" target="_blank" class="ml-2 text-red-600 hover:text-red-800">
+    <i class='bx bxl-youtube'></i>
+  </a>
+</p>
+</div>
+    </div>
+</div>
+  </div>
+ 
+
+
+
+
+
+
+  <script src="index.js"></script>
+  <script src="assets/jquery.aniview.js"></script>
+</body>
+</html>
